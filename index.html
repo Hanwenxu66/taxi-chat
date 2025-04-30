@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>计程车价格助手</title>
+</head>
+<body>
+  <h2 style="text-align: center;">🚕 欢迎使用计程车价格智能助手</h2>
+
+  <script src="https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/1.2.0-beta.6/libs/cn/index.js"></script>
+  <script>
+    new CozeWebSDK.WebChatClient({
+      config: {
+        bot_id: '7498913507673374759',
+      },
+      componentProps: {
+        title: '计程车助手',
+      },
+      auth: {
+        type: 'token',
+        token: 'pat_W3xKrR1OXycsHndUWhaacUXfUEqnGLmYOKKVRzNQpRXg8OTsm29',
+        onRefreshToken: function () {
+          return 'pat_W3xKrR1OXycsHndUWhaacUXfUEqnGLmYOKKVRzNQpRXg8OTsm29';
+        }
+      }
+    });
+  </script>
+</body>
+</html>
